@@ -1,0 +1,9 @@
+query StarshipsForRoot {
+  allStarships {
+    edges {
+      node {
+        ...FullStarship
+      }
+    }
+  }
+}

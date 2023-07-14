@@ -1,0 +1,29 @@
+fragment FullStarship on Starship {
+  id
+  name
+  model
+  manufacturers
+  costInCredits
+  length
+  crew
+  passengers
+  maxAtmospheringSpeed
+  hyperdriveRating
+  MGLT
+  cargoCapacity
+  consumables
+  pilotConnection {
+    edges {
+      node {
+        name
+      }
+    }
+  }
+  filmConnection {
+    edges {
+      node {
+        title
+      }
+    }
+  }
+}

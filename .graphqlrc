@@ -1,0 +1,16 @@
+overwrite: true
+# Replace with localhost gql
+schema: "https://swapi-graphql.netlify.app/.netlify/functions/index"
+documents: "src/**/*.gql"
+generates:
+  src/graphql/generated.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-vue-apollo"
+    config:
+      withCompositionFunctions: true
+config:
+  scalars:
+    Date: number
+    Long: number
